@@ -1,0 +1,5 @@
+F:\توسعه برنامه سازی آزمون\irQm-master\irQm-master\irQm\irQm\obj\Debug\irQm.csprojAssemblyReference.cache
+F:\توسعه برنامه سازی آزمون\irQm-master\irQm-master\irQm\irQm\obj\Debug\irQm.Form1.resources
+F:\توسعه برنامه سازی آزمون\irQm-master\irQm-master\irQm\irQm\obj\Debug\irQm.Properties.Resources.resources
+F:\توسعه برنامه سازی آزمون\irQm-master\irQm-master\irQm\irQm\obj\Debug\irQm.csproj.GenerateResource.cache
+F:\توسعه برنامه سازی آزمون\irQm-master\irQm-master\irQm\irQm\obj\Debug\irQm.csproj.CoreCompileInputs.cache
