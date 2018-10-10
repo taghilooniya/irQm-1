@@ -1,7 +1,0 @@
-F:\توسعه برنامه سازی آزمون\irQm-master\irQm-master\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
-F:\توسعه برنامه سازی آزمون\irQm-master\irQm-master\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-F:\توسعه برنامه سازی آزمون\irQm-master\irQm-master\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
-F:\توسعه برنامه سازی آزمون\irQm-master\irQm-master\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojAssemblyReference.cache
-F:\توسعه برنامه سازی آزمون\irQm-master\irQm-master\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
-F:\توسعه برنامه سازی آزمون\irQm-master\irQm-master\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-F:\توسعه برنامه سازی آزمون\irQm-master\irQm-master\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

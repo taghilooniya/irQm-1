@@ -9,6 +9,6 @@ namespace irQm.BaseCodes
     class TFOption : IOption
     {
         public bool IsTrue { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-
+        public bool Answered { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
     }
 }

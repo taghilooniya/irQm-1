@@ -15,5 +15,6 @@ namespace irQm.BaseCodes
         public List<IDictionary<string, string>> Pairs { get; set; } = new List<IDictionary<string, string>>();
         public List<string> ExtraAnswers { get; set; } = new List<string>();
 
+        public bool AutomaticEvaluation => true;
     }
 }

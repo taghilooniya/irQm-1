@@ -13,7 +13,7 @@ namespace irQm.BaseCodes
         public float gainedScore { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public List<string> Tags { get; set; } = new List<string>();
         public TFOption TrueOption { get; set; }
-        
 
+        public bool AutomaticEvaluation => true;
     }
 }
