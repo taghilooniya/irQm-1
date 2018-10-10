@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace irQm.BaseCodes
 {
-    class ShortAnswer : IQuestion
+    class ShortAnswer : IQuestion,IEvaluable
     {
         public string Face { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public float Score { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -14,6 +14,10 @@ namespace irQm.BaseCodes
         public string Answer { get; private set; }
         public List<string> Tags { get; set; } = new List<string>();
         public string UserAnswer { get; set; }
-        public bool AutomaticEvaluation => true;
+
+        public void Evaluate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
