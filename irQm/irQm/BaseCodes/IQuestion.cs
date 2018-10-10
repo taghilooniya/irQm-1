@@ -9,5 +9,6 @@ namespace irQm.BaseCodes
         float Score { get; set; }
         float gainedScore { get; set; }
         List<string> Tags { get; set; }
+        bool AutomaticEvaluation { get; }
     }
 }

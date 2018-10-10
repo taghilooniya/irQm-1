@@ -3,8 +3,10 @@ namespace irQm.BaseCodes
 {
     public  class Option:IOption
     {
+        public bool Answered { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         string  Face { get; set; }
         
-        bool IOption.IsTrue { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public bool IsTrue { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
     }
 }
