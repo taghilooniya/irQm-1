@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace irQm.BaseCodes
 {
-    class Puzzle : IQuestion,IEvaluable
+    class Puzzle : IQuestion
     {
         public string Face { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public float Score { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -15,9 +15,6 @@ namespace irQm.BaseCodes
         public List<IDictionary<string, string>> Pairs { get; set; } = new List<IDictionary<string, string>>();
         public List<string> ExtraAnswers { get; set; } = new List<string>();
 
-        public void Evaluate()
-        {
-            throw new NotImplementedException();
-        }
+        public bool AutomaticEvaluation => true;
     }
 }
