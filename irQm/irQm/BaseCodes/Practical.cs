@@ -14,6 +14,5 @@ namespace irQm.BaseCodes
         public List<string> checkList { get; set; } = new List<string>();
         public List<string> Tags { get; set; } = new List<string>();
 
-        public bool AutomaticEvaluation => false;
     }
 }
