@@ -18,6 +18,7 @@ namespace irQm.BaseCodes
         public void Evaluate()
         {
             var c = Options.Count(o => o.IsTrue);
+            
 
             if (c > 0)
             {
