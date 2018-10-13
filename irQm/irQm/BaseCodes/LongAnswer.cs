@@ -14,5 +14,6 @@ namespace irQm.BaseCodes
         public string Answer { get; private set; }
         public List<string> Tags { get; set; } = new List<string>();
 
+        public bool AutomaticEvaluation { get { return false; } }
     }
 }
