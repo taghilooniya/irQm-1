@@ -8,16 +8,18 @@ namespace irQm.BaseCodes
 {
     class Puzzle : IQuestion,IEvaluable
     {
-        public string Face { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public float Score { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public float gainedScore { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Face { get; set; }
+        public float Score { get; set; }
+        public float gainedScore { get; set; }
         public List<string> Tags { get ; set; } = new List<string>();
-        public List<IDictionary<string, string>> Pairs { get; set; } = new List<IDictionary<string, string>>();
+        public Dictionary<string, string> Pairs { get; set; } = new Dictionary<string, string>();
         public List<string> ExtraAnswers { get; set; } = new List<string>();
-
+        public Dictionary<string, string> AnswerPairs { get; set; } = new Dictionary<string, string>();
         public void Evaluate()
         {
-            throw new NotImplementedException();
+            var count= AnswerPairs.Count(p=>Pairs.Contains(p));
+            gainedScore=Score/count;
+            
         }
     }
 }

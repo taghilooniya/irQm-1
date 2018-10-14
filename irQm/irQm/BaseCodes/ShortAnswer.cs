@@ -17,7 +17,8 @@ namespace irQm.BaseCodes
 
         public void Evaluate()
         {
-            throw new NotImplementedException();
+            //باید برای ی و ک هم رفع شود
+            if(Answer.Trim().Replace(" ","").Replace("‌","")==UserAnswer.Replace(" ","").Replace("‌",""));
         }
     }
 }
