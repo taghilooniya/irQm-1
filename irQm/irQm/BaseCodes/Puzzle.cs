@@ -12,13 +12,21 @@ namespace irQm.BaseCodes
         public float Score { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public float gainedScore { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public List<string> Tags { get; set; } = new List<string>();
-        public List<IDictionary<string, string>> Pairs { get; set; } = new List<IDictionary<string, string>>();
-        public List<IDictionary<string, string>> AnswerPairs { get; set; } = new List<IDictionary<string, string>>();
+        public Dictionary<string, string> Pairs { get; set; } = new Dictionary<string, string>();
+        public Dictionary<string, string> AnswerPairs { get; set; } = new Dictionary <string, string>();
         public List<string> ExtraAnswers { get; set; } = new List<string>();
+        int count=0;
        
         public void Evaluate()
         {
-            throw new NotImplementedException();
+            foreach (var key in Pairs.Keys)
+            {
+                if (!Pairs[key].Equals(AnswerPairs[key]))
+                {
+                    count++;
+                }
+                gainedScore = Score / count;
+            }
         }
     }
 }
