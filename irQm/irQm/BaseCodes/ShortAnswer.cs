@@ -11,14 +11,40 @@ namespace irQm.BaseCodes
         public string Face { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public float Score { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public float gainedScore { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Answer { get; private set; }
+        //public string Answer { get; private set; }
+        public List<string> Answer { get; set; } = new List<string>();
         public List<string> Tags { get; set; } = new List<string>();
         public string UserAnswer { get; set; }
+       
+
 
         public void Evaluate()
         {
-            //باید برای ی و ک هم رفع شود
-            if(Answer.Trim().Replace(" ","").Replace("‌","")==UserAnswer.Replace(" ","").Replace("‌",""));
+            
+               
+                    if (UserAnswer.Contains('ی')|| UserAnswer.Contains('ک')|| UserAnswer.Contains('آ'))
+                    {
+                        while (UserAnswer.Contains('ی') || UserAnswer.Contains('ک') || UserAnswer.Contains('آ'))
+                        {
+                        UserAnswer.Replace('ی', 'ي');
+                        UserAnswer.Replace('ک', 'ك');
+                        UserAnswer.Replace('آ', 'ا');                                           
+                        }                 
+                    }
+
+                                                                               
+            for (int i = 0; i < Answer.Count; i++)
+            {
+                string str = Answer[i];
+                if (str.Trim().Replace(" ", "").Replace("‌", "") == UserAnswer.Replace(" ", "").Replace("‌", ""))
+                {
+                    gainedScore = Score;
+                }
+
+            }
+
+            
+            
         }
     }
 }
