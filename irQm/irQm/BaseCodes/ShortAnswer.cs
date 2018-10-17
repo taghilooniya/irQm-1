@@ -8,9 +8,9 @@ namespace irQm.BaseCodes
 {
     class ShortAnswer : IQuestion,IEvaluable
     {
-        public string Face { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public float Score { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public float gainedScore { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Face { get; set ; }
+        public float Score { get; set; }
+        public float gainedScore { get; set; }
         public List<string> Answer { get; set; } = new List<string>();
         public List<string> Tags { get; set; } = new List<string>();
         public string UserAnswer { get; set; }
