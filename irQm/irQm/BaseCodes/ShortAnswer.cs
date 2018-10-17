@@ -11,7 +11,6 @@ namespace irQm.BaseCodes
         public string Face { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public float Score { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public float gainedScore { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        //public string Answer { get; private set; }
         public List<string> Answer { get; set; } = new List<string>();
         public List<string> Tags { get; set; } = new List<string>();
         public string UserAnswer { get; set; }
@@ -20,27 +19,19 @@ namespace irQm.BaseCodes
 
         public void Evaluate()
         {
-            
-               
-                    if (UserAnswer.Contains('ی')|| UserAnswer.Contains('ک')|| UserAnswer.Contains('آ'))
-                    {
-                        while (UserAnswer.Contains('ی') || UserAnswer.Contains('ک') || UserAnswer.Contains('آ'))
-                        {
-                        UserAnswer.Replace('ی', 'ي');
-                        UserAnswer.Replace('ک', 'ك');
-                        UserAnswer.Replace('آ', 'ا');                                           
-                        }                 
-                    }
-
-                                                                               
+                                                                                  
             for (int i = 0; i < Answer.Count; i++)
             {
                 string str = Answer[i];
                 if (str.Trim().Replace(" ", "").Replace("‌", "") == UserAnswer.Replace(" ", "").Replace("‌", ""))
                 {
+                    UserAnswer.Replace('ی', 'ي');
+                    UserAnswer.Replace('ک', 'ك');
+                    UserAnswer.Replace('آ', 'ا');
                     gainedScore = Score;
+                    break;
                 }
-
+               
             }
 
             
