@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,8 @@ namespace irQm.BaseCodes
 {
     class ShortAnswer : IQuestion,IEvaluable
     {
+        [MaxLength(50)]
+        public string Id { get; set; }
         public string Face { get; set ; }
         public float Score { get; set; }
         public float gainedScore { get; set; }
