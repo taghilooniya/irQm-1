@@ -14,6 +14,7 @@ namespace irQm.BaseCodes
         public List<string> Tags { get; set; } = new List<string>();
         public TFOption TrueOption { get; set; }
         public TFOption FalseOption { get; set; }
+        public Lesson Lesson { get; set; }
 
         public void Evaluate()
         {

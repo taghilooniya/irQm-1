@@ -13,6 +13,9 @@ namespace irQm.BaseCodes
         public List<string> Tags { get; set; } = new List<string>();
         bool multi;
         public bool MultiSelections { get { return multi; }set { multi = value && Options.Count(o => o.IsTrue) > 1; } }
+
+        public Lesson Lesson { get; set; }
+
         public void Mix() { }
 
         public void Evaluate()
