@@ -14,8 +14,7 @@ namespace irQm.BaseCodes
         public List<string> Answer { get; set; } = new List<string>();
         public List<string> Tags { get; set; } = new List<string>();
         public string UserAnswer { get; set; }
-       
-
+        public Lesson Lesson { get ; set ; }
 
         public void Evaluate()
         {

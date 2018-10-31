@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace irQm.BaseCodes
 {
-    class Lesson
+   public class Lesson
     {
-        public string LessonName { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string LessonName { get ; set ; }
         public string Description { get; set; }
 
     }

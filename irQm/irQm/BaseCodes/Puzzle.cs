@@ -15,6 +15,8 @@ namespace irQm.BaseCodes
         public Dictionary<string, string> Pairs { get; set; } = new Dictionary<string, string>();
         public List<string> ExtraAnswers { get; set; } = new List<string>();
         public Dictionary<string, string> AnswerPairs { get; set; } = new Dictionary<string, string>();
+        public Lesson Lesson { get; set; }
+
         public void Evaluate()
         {
             var count= AnswerPairs.Count(p=>Pairs.Contains(p));
